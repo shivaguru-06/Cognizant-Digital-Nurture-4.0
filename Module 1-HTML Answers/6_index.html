@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Feedback</title>
+    <style>
+        #feedbackSection {
+            margin: 20px auto;
+            width: 320px;
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 6px;
+        }
+        .event-img {
+            border: 2px solid #1976d2;
+            width: 120px;
+            height: 80px;
+        }
+    </style>
+    <script>
+        function validatePhone() {
+            const phone = document.getElementById('phone').value;
+            const regex = /^[0-9]{10}$/;
+            if (!regex.test(phone)) {
+                alert("Please enter a valid 10-digit phone number.");
+                document.getElementById('phone').focus();
+            }
+        }
+        function showFee() {
+            const fee = document.getElementById('eventFee').value;
+            document.getElementById('feeDisplay').textContent = "Selected Event Fee: $" + fee;
+        }
+        function showFeedbackConfirmation() {
+            alert('Thank you for your feedback!');
+        }
+        function enlargeImage(img) {
+            img.style.width = img.style.width === '240px' ? '120px' : '240px';
+        }
+        function countChars() {
+            const len = document.getElementById('feedback').value.length;
+            document.getElementById('charCount').textContent = len + " characters";
+        }
+    </script>
+</head>
+<body>
+    <div id="feedbackSection">
+        <input type="text" id="phone" placeholder="Phone Number" onblur="validatePhone()">
+        <br>
+        <select id="eventFee" onchange="showFee()">
+            <option value="10">Workshop - Rs.10</option>
+            <option value="20">Seminar - Rs.20</option>
+            <option value="0">Festival - Free</option>
+        </select>
+        <span id="feeDisplay" class="highlight"></span>
+        <br><br>
+        <button onclick="showFeedbackConfirmation()">Submit Feedback</button>
+        <br><br>
+        <img src="https://via.placeholder.com/120x80?text=Double+Click+Me"
+             alt="Event" title="Double-click to enlarge" class="event-img" ondblclick="enlargeImage(this)">
+        <br><br>
+        <textarea id="feedback" onkeyup="countChars()" placeholder="Type your feedback here..."></textarea>
+        <span id="charCount"></span>
+    </div>
+</body>
+</html>

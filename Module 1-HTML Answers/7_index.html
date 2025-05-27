@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Promo Video</title>
+</head>
+<body>
+    <video id="promoVideo" width="320" height="180" controls oncanplay="videoReady()">
+        <source src="promo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="videoMsg"></div>
+    <script>
+        function videoReady() {
+            document.getElementById('videoMsg').textContent = "Video ready to play";
+        }
+        window.onbeforeunload = function() {
+            
+            if(document.getElementById('eventRegForm') && !document.getElementById('confirmation').value) {
+                return "You have unsaved changes!";
+            }
+        };
+    </script>
+</body>
+</html>

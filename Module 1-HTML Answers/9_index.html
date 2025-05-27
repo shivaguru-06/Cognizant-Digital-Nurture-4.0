@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Nearby Events</title>
+</head>
+<body>
+    <button onclick="findNearby()">Find Nearby Events</button>
+    <div id="coords"></div>
+    <script>
+        function findNearby() {
+            const coordsDiv = document.getElementById('coords');
+            if (!navigator.geolocation) {
+                coordsDiv.textContent = "Geolocation is not supported by your browser.";
+                return;
+            }
+            coordsDiv.textContent = "Locating...";
+            navigator.geolocation.getCurrentPosition(
+                function(position) {
+                    coordsDiv.textContent = "Latitude: " + position.coords.latitude +
+                        ", Longitude: " + position.coords.longitude;
+                },
+                function(error) {
+                    coordsDiv.textContent = "Error: " + error.message;
+                },
+                { enableHighAccuracy: true, timeout: 10000 }
+            );
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration</title>
+    <style>
+        #eventRegForm {
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #bbb;
+            width: 320px;
+            background: #fafafa;
+        }
+        #eventRegForm input, #eventRegForm select, #eventRegForm textarea {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 5px;
+        }
+        #confirmation {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            document.getElementById('confirmation').value = "Registration successful!";
+        }
+    </script>
+</head>
+<body>
+    <form id="eventRegForm" onsubmit="handleFormSubmit(event)">
+        <input type="text" name="name" placeholder="Your Name" required autofocus>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="date" name="date" required>
+        <select name="eventType" required>
+            <option value="">Select Event Type</option>
+            <option value="workshop">Workshop</option>
+            <option value="seminar">Seminar</option>
+            <option value="festival">Festival</option>
+        </select>
+        <textarea name="message" placeholder="Your message"></textarea>
+        <button type="submit">Register</button>
+        <output id="confirmation"></output>
+    </form>
+</body>
+</html>
