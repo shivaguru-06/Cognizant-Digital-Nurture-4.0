@@ -1,0 +1,22 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+h2 {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.description {
+  font-style: italic;
+  font-size: 1.1em;
+  text-align: justify;
+  line-height: 1.8;
+}
+

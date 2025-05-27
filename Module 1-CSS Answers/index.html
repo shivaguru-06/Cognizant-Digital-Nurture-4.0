@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Community Event Portal</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background: #e3f2fd url('city-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+   
+    <h1 id="mainHeader" style="color: red;">Local Community Event Portal</h1>
+
+    
+    <nav>
+        <ul>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#news">Community News</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="eventCard">
+        <h2>Spring Fair</h2>
+        <p class="description">A fun-filled day with games, food, and music for all ages.</p>
+    </div>
+    <div class="eventCard">
+        <h2>Charity Run</h2>
+        <p class="description">Join us for a 5K run to support local charities.</p>
+    </div>
+
+   
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <table>
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Fee</th>
+            </tr>
+            <tr>
+                <td>Spring Fair</td>
+                <td>June 5</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td>Charity Run</td>
+                <td>June 12</td>
+                <td>$10</td>
+            </tr>
+        </table>
+    </section>
+
+   
+    <section id="news">
+        <h2>Community Bulletin</h2>
+        <div class="article">
+            <p>
+                The city council is excited to announce a series of summer events for all residents. 
+                From art workshops to food festivals, there is something for everyone. 
+                Stay tuned for more updates and check this portal regularly for new announcements.
+                Volunteers are always welcome for event organization. 
+                Contact us if you’d like to help make our community vibrant and inclusive!
+            </p>
+        </div>
+    </section>
+
+ 
+    <section id="register">
+        <h2>Register for an Event</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <select>
+                <option value="">Select Event</option>
+                <option value="fair">Spring Fair</option>
+                <option value="run">Charity Run</option>
+            </select>
+            <button class="cta-button" type="submit">Register</button>
+        </form>
+    </section>
+
+   
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <ul class="events">
+            <li>Email: <a href="mailto:shivaguru242@gmal.com">shivaguru242@gmail.com</a></li>
+            <li>Phone: <a href="tel:1234567890">123-456-7890</a></li>
+            <li>Visit us at City Hall</li>
+        </ul>
+    </section>
+</body>
+</html>

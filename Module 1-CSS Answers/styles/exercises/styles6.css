@@ -1,0 +1,40 @@
+/* Nav menu: remove bullets */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+/* List items spacing */
+nav li {
+  margin-right: 22px;
+}
+
+/* Custom link styles */
+a:link {
+  color: #1976d2;
+  text-decoration: none;
+}
+a:visited {
+  color: #512da8;
+}
+a:hover, a:focus {
+  color: #fff;
+  background: #1976d2;
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+a:active {
+  color: #d32f2f;
+}
+
+/* List style for event lists */
+ul.events {
+  list-style-type: square;
+  list-style-position: inside;
+  margin-left: 18px;
+}
+ul.events li {
+  padding: 4px 0;
+}

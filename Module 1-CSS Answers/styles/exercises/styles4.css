@@ -1,0 +1,21 @@
+body {
+  background-color: #e3f2fd; /* Fallback color */
+  background-image: url('city-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Section headers with gradient */
+section h2 {
+  background: linear-gradient(90deg, #1976d2, #64b5f6);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* Use HEX and RGBA */
+.eventCard {
+  background: #fff;
+  color: rgba(25, 118, 210, 0.85);
+}

@@ -1,0 +1,14 @@
+/* <section class="news">
+  <h2>Community Bulletin</h2>
+  <div class="article">
+    <p>Lots of news content here... (repeat as needed)</p>
+  </div>
+</section> 
+*/
+
+.article {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+}
+
