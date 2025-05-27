@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap 5 Forms Example</title>
+  <!-- Local Bootstrap 5 CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+    .login-card {
+      max-width: 400px;
+      margin: 60px auto;
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+      border-radius: 1rem;
+      background: #fff;
+      padding: 2rem 2rem 1.5rem 2rem;
+    }
+    .login-card h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-card">
+
+    <!-- Login Form with form-floating -->
+    <h2 class="mb-4">Login Form</h2>
+    <form>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com">
+        <label for="loginEmail">Email address</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+        <label for="loginPassword">Password</label>
+      </div>
+      <button type="submit" class="btn btn-success w-100 py-2">Login</button>
+    </form>
+
+  </div>
+  <!-- Local Bootstrap 5 JS Bundle -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

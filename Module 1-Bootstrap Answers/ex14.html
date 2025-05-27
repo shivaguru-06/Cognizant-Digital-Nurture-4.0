@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap 5 Display & Visibility Example</title>
+  <!-- Local Bootstrap 5 CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Optional: Make sidebar sticky on larger screens */
+    @media (min-width: 768px) {
+      .sidebar-sticky {
+        position: sticky;
+        top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-4">
+
+    <!-- Exercise 14.1: Display utilities -->
+    <div class="mb-4">
+      <div class="p-3 bg-primary text-white mb-2 d-none d-md-block">
+        This section is <strong>hidden on small screens</strong> and <strong>visible on md and up</strong> (d-none d-md-block).
+      </div>
+      <div class="p-3 bg-success text-white mb-2 d-lg-flex d-none">
+        This section is <strong>only visible on large screens and up</strong> (d-lg-flex d-none).
+      </div>
+      <div class="p-3 bg-warning text-dark mb-2 d-block d-md-none">
+        This section is <strong>only visible on small screens</strong> (d-block d-md-none).
+      </div>
+    </div>
+
+    <!-- Exercise 14.2: Responsive Sidebar -->
+    <div class="row">
+      <!-- Sidebar: visible on md and up, collapsible on small screens -->
+      <nav class="col-lg-3 col-md-4 mb-3 mb-md-0">
+        <!-- Toggle button for sidebar on small screens -->
+        <button class="btn btn-dark w-100 d-md-none mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-expanded="false" aria-controls="sidebarMenu">
+          Toggle Sidebar
+        </button>
+        <div class="collapse d-md-block sidebar-sticky" id="sidebarMenu">
+          <div class="bg-dark text-white p-4 rounded h-100">
+            <h5>Sidebar</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link text-white" href="#">Dashboard</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Profile</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Settings</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="col-lg-9 col-md-8">
+        <div class="p-4 bg-light rounded">
+          <h4>Main Content</h4>
+          <p>This main content area is always visible. The sidebar is collapsible on small screens and sticky on tablets and larger screens.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Local Bootstrap 5 JS Bundle -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

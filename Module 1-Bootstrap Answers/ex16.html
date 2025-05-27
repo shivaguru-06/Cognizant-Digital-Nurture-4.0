@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap 5 Positioning Utilities Example</title>
+  <!-- Local Bootstrap 5 CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding-bottom: 70px; /* Space for fixed footer */
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+
+    <!-- Exercise 16.2: Image with overlay badge -->
+    <div class="position-relative d-inline-block mb-5">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded" width="180" height="180" alt="Profile">
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        5+
+      </span>
+    </div>
+
+    <p>This example shows a badge overlaid on an image using <code>position-relative</code> and <code>position-absolute</code>.</p>
+  </div>
+
+  <!-- Exercise 16.1: Fixed Footer -->
+  <footer class="bg-dark text-white text-center py-3 position-fixed bottom-0 start-0 w-100">
+    Fixed Footer - Always at the bottom
+  </footer>
+
+  <!-- Local Bootstrap 5 JS Bundle -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap 5 Spacing Utilities Example</title>
+  <!-- Local Bootstrap 5 CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-4">
+
+    <!-- Exercise 12.1: Margin and Padding Utilities -->
+    <section class="bg-light m-3 p-2">
+      <h2 class="mb-3 mt-4">Welcome Section</h2>
+      <p class="mb-4">This section uses <code>m-3</code> for margin and <code>p-2</code> for padding. The heading uses <code>mt-4</code> for top margin and the paragraph uses <code>mb-4</code> for bottom margin.</p>
+    </section>
+
+    <!-- Exercise 12.2: Pricing Section with Spacing -->
+    <section class="py-5">
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm p-3">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-3">Basic</h5>
+              <h2 class="card-price mb-4">$9 <small class="text-muted">/mo</small></h2>
+              <ul class="list-unstyled mb-4">
+                <li class="mb-2">1 User</li>
+                <li class="mb-2">5GB Storage</li>
+                <li class="mb-2">Email Support</li>
+              </ul>
+              <a href="#" class="btn btn-outline-primary w-100">Choose</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow p-4 border-primary">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-3">Pro</h5>
+              <h2 class="card-price mb-4">$29 <small class="text-muted">/mo</small></h2>
+              <ul class="list-unstyled mb-4">
+                <li class="mb-2">10 Users</li>
+                <li class="mb-2">50GB Storage</li>
+                <li class="mb-2">Priority Support</li>
+              </ul>
+              <a href="#" class="btn btn-primary w-100">Choose</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm p-3">
+            <div class="card-body text-center">
+              <h5 class="card-title mb-3">Enterprise</h5>
+              <h2 class="card-price mb-4">$99 <small class="text-muted">/mo</small></h2>
+              <ul class="list-unstyled mb-4">
+                <li class="mb-2">Unlimited Users</li>
+                <li class="mb-2">200GB Storage</li>
+                <li class="mb-2">Phone & Email Support</li>
+              </ul>
+              <a href="#" class="btn btn-outline-primary w-100">Choose</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!-- Local Bootstrap 5 JS Bundle -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

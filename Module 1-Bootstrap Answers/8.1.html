@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap 5 Forms Example</title>
+  <!-- Local Bootstrap 5 CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+
+    <!-- Exercise 8.1: Registration Form -->
+    <h2 class="mb-4">Registration Form</h2>
+    <form>
+      <div class="mb-3">
+        <label for="regName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="regName" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="regEmail" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="regEmail" placeholder="Enter your email">
+      </div>
+      <div class="mb-3">
+        <label for="regPassword" class="form-label">Password</label>
+        <input type="password" class="form-control" id="regPassword" placeholder="Password">
+      </div>
+      <div class="mb-3 input-group">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="regCheck">
+        <label class="form-check-label" for="regCheck">I agree to the terms and conditions</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+
+    <hr class="my-5">
+
+  </div>
+  <!-- Local Bootstrap 5 JS Bundle -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+// Override variables before importing Bootstrap
+$primary: #e83e8c;
+$border-radius: 2rem;
+@import "../node_modules/bootstrap/scss/bootstrap";
